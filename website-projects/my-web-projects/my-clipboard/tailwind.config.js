@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./*.html'],
+  content: ['./src/**/*.{html,js}'],
   theme: {
     screens: {
       sm: '480px',
@@ -14,7 +14,7 @@ module.exports = {
         strongCyan: 'hsl(171, 66%, 44%)',
         lightBlue: 'hsl(223, 100%, 69%)',
         darkGrayishBlue: 'hsl(210, 10%, 33%)',
-        darkGrayishBlue: 'hsl(201, 11%, 66%)',
+        grayishBlue: 'hsl(201, 11%, 66%)',
       },
       fontFamily: {
         sans: ['Bai Jamjuree', 'sans-serif'], 

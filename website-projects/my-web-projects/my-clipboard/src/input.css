@@ -1,0 +1,44 @@
+/**
+ * This injects Tailwind's base styles and any base styles registered by
+ * plugins.
+ */
+@tailwind base;
+/**
+ * This injects Tailwind's base styles and any base styles registered by
+ * plugins.
+ */
+@tailwind components;
+/**
+ * This injects Tailwind's utility classes and any utility classes registered
+ * by plugins.
+ */
+@tailwind utilities;
+
+/**
+ * Use this directive to control where Tailwind injects the hover, focus,
+ * responsive, dark mode, and other variants of each class.
+ *
+ * If omitted, Tailwind will append these classes to the very end of
+ * your stylesheet by default.
+ */
+ /* @tailwind variants */
+ 
+ body {
+
+    background-image: url('../src/images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+     
+ }
+
+ /* Using media query to define the background image on moblie devices  */
+ @media(max-width: 576px){
+    body {
+
+        background-image: url('../src/images/bg-header-mobile.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    }
+ }
