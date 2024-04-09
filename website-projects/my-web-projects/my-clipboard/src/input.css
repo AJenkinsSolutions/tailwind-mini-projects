@@ -22,6 +22,38 @@
  * your stylesheet by default.
  */
  /* @tailwind variants */
+
+/* custom class/directives for our container */
+/* because they all contain these three classes */
+.section-container {
+   @apply max-w-6xl mx-auto text-center px-10
+ }
+ .section-paragraph {
+   @apply max-w-3xl mx-auto mb-24 text-xl font-thin text-center text-grayishBlue
+ }
+
+ .button-container {
+   @apply flex flex-col items-center justify-center w-full space-y-2 md:flex-row md:space-y-0 md:space-x-4
+ }
+
+ .button-style {
+   @apply p-4 px-8 text-white duration-200 rounded-full shadow hover:opacity-80
+ }
+
+
+/* Adding custom default classes to base classes */
+/* heading are within the base of the layer */
+ @layer base {
+
+   h3 {
+      @apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl
+   }
+
+   h5 {
+      @apply mb-2 text-2xl font-bold text-darkGrayishBlue
+   }
+
+ }
  
  body {
 
